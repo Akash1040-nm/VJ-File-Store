@@ -81,9 +81,9 @@ async def gen_link_s(bot, message):
         share_link = f"https://t.me/{username}?start={outstr}"
     if user["base_site"] and user["shortener_api"] != None:
         short_link = await get_short_link(user, share_link)
-        await message.reply(f"<b>⭕ nere ɪs ʏᴏᴜʀ ʟɪɴᴋ:\n\n🖇️ sʜᴏʀᴛ ʟɪɴᴋ :- {short_link}</b>")
+        await message.reply(f"<b>⭕ Here ɪs ʏᴏᴜʀ ʟɪɴᴋ:\n\n🖇️ sʜᴏʀᴛ ʟɪɴᴋ :- {short_link}</b>")
     else:
-        await message.reply(f"<b>⭕ nere ɪs ʏᴏᴜʀ ʟɪɴᴋ:\n\n🔗 ᴏʀɪɢɪɴᴀʟ ʟɪɴᴋ :- {share_link}</b>")
+        await message.reply(f"<b>⭕ Here ɪs ʏᴏᴜʀ ʟɪɴᴋ:\n\n🔗 ᴏʀɪɢɪɴᴀʟ ʟɪɴᴋ :- {share_link}</b>")
         
 
 # Don't Remove Credit Tg - @VJ_Botz
