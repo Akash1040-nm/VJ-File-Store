@@ -4,7 +4,8 @@
 
 
 class script(object):
-    START_TXT = """<b>Hello {},My Name is {},
+    START_TXT = """<b>Hello {}, My Name is {},
+    
     🎉 Welcome to AN Movies Bot! 🎥
 
 ✨ Stay updated with the latest Kannada movies and enjoy exclusive content.
