@@ -17,7 +17,7 @@ class script(object):
 # Ask Doubt on telegram @KingVJ01
 
     
-    CAPTION = """<b>📂 ғɪʟᴇɴᴀᴍᴇ : {("@AN_MOVIES1")+file_name}
+    CAPTION = """<b>📂 ғɪʟᴇɴᴀᴍᴇ : {file_name}
 
 sɪᴢᴇ ⚙️: {file_size}
 
@@ -49,7 +49,7 @@ If You Want To Remove Api Then Copy This And Send To Bot - `/api None`"""
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
 # Ask Doubt on telegram @KingVJ01
 
-    ABOUT_TXT = """<b>🎉 Welcome to AN Movies Bot! 🎥
+    ABOUT_TXT = "<b>🎉 Welcome to AN Movies Bot! 🎥
 
 ✨ Stay updated with the latest Kannada movies and enjoy exclusive content.
 🔥 Don’t miss out—join our updates channel for new releases and exciting features!
@@ -67,7 +67,7 @@ If You Want To Remove Api Then Copy This And Send To Bot - `/api None`"""
 👥 Main Channel: <a href=https://t.me/AN_MOVIES1>AN Channel</a>
 
 📢 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ: <a href=https://t.me/+dhwbRBOs1HozM2M1>AN Updates</a></b>
-"""
+"
 
     CABOUT_TXT = """<b>🎉 Welcome to AN Movies Bot! 🎥
 
