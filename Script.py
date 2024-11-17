@@ -10,7 +10,8 @@ class script(object):
 ✨ Stay updated with the latest Kannada movies and enjoy exclusive content.
 🔥 Don’t miss out—join our updates channel for new releases and exciting features!
 
-📥 Join Updates Channel 👇👇</b>"""
+📥 Join Updates Channel 👇👇</b>
+"""
 
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
@@ -66,7 +67,8 @@ If You Want To Remove Api Then Copy This And Send To Bot - `/api None`"""
 
 👥 Main Channel: <a href=https://t.me/AN_MOVIES1>AN Channel</a>
 
-📢 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ: <a href=https://t.me/+dhwbRBOs1HozM2M1>AN Updates</a></b>"""
+📢 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ: <a href=https://t.me/+dhwbRBOs1HozM2M1>AN Updates</a></b>
+"""
 
     CABOUT_TXT = """<b>🎉 Welcome to AN Movies Bot! 🎥
 
