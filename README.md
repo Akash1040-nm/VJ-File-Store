@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://ibb.co/CWscZLB" alt="VJ-FILE-STORE-BOT Logo">
+  <img src="https://envs.sh/5iO.jpg" alt="VJ-FILE-STORE-BOT Logo">
 </p>
 <h1 align="center">
   VJ FILE STORE BOT
