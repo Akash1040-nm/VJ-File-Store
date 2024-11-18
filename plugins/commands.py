@@ -243,7 +243,9 @@ async def start(client, message):
                 await g.delete()
                 await k.edit_text("<b>Your File/Video is successfully deleted❗❗❗</b>")
             return
-        
+        except:
+            pass
+        return await message.reply('No such file exist.')
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
 # Ask Doubt on telegram @KingVJ01
