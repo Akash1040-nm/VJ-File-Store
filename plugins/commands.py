@@ -61,7 +61,7 @@ async def start(client, message):
             ]
         ]
         if CLONE_MODE == True:
-        me2 = (await client.get_me()).mention
+            
         await message.reply_photo(
             photo=random.choice(PICS),
             caption=script.START_TXT.format(message.from_user.mention, me2),
