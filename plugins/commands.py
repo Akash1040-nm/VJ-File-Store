@@ -60,16 +60,6 @@ async def start(client, message):
             InlineKeyboardButton('🤖 Updates Channel', url='https://t.me/+7ZfFYSnXkIc2MzQ1')
             ] 
         ]
-        if CLONE_MODE == True:
-            buttons.append([InlineKeyboardButton('🤖 ᴄʀᴇᴀᴛᴇ ʏᴏᴜʀ ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ', callback_data='clone')])
-        reply_markup = InlineKeyboardMarkup(buttons)
-        me2 = (await client.get_me()).mention
-        await message.reply_photo(
-            photo=random.choice(PICS),
-            caption=script.START_TXT.format(message.from_user.mention, me2),
-            reply_markup=reply_markup
-        )
-        return
 
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
