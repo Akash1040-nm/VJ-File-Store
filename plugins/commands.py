@@ -234,19 +234,32 @@ async def start(client, message):
             
             
             if AUTO_DELETE_MODE == True:
-                k = await client.send_message(chat_id = message.from_user.id, text=f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie File/Video will be deleted in <b><u>{AUTO_DELETE} minutes</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this File/Video to your Saved Messages and Start Download there</b>")
-                await asyncio.sleep(AUTO_DELETE_TIME)
-                try:
-                    await msg.delete()
+    try:
+        k = await client.send_message(
+            chat_id=message.from_user.id,
+            text=(
+                "<b><u>❗️❗️❗️IMPORTANT❗️❗️❗️</u></b>\n\n"
+                f"This Movie File/Video will be deleted in <b><u>{AUTO_DELETE} minutes</u> 🫥</b> "
+                "<i>(Due to Copyright Issues)</i>.\n\n"
+                "<b><i>Please forward this File/Video to your Saved Messages and start downloading from there.</b>"
+            )
+        )
+        await asyncio.sleep(AUTO_DELETE_TIME)
 
-                await g.delete()
-                except:
-                    pass
-                await k.edit_text("<b>Your File/Video is successfully deleted❗❗❗</b>")
-            return
-        except:
+        try:
+            await message.delete()  # Delete the original message
+        except Exception:
             pass
-        return await message.reply('No such file exist.')
+
+        try:
+            await k.delete()  # Delete the message sent to the user
+        except Exception:
+            pass
+
+        g = await client.send_message(chat_id=message.from_user.id, text="<b>Your File/Video is successfully deleted❗❗❗</b>")
+        await g.delete()  # Delete the confirmation message after it is sent
+    except Exception:
+        return await message.reply("No such file exists.")
         
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
