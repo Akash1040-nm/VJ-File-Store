@@ -247,7 +247,7 @@ async def start(client, message):
                 except:
                     return
             
-            
+            await msg.edit_caption(f_caption)
             
                 
             if AUTO_DELETE_MODE == True:
