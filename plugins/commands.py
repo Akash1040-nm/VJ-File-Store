@@ -255,6 +255,7 @@ async def start(client, message):
                 await asyncio.sleep(AUTO_DELETE_TIME)
                 try:
                     await msg.delete()
+                    await k.delete()
                 except:
                     pass
                 await g.delete()
@@ -262,7 +263,7 @@ async def start(client, message):
             return
         except:
             pass
-        return await message.reply('No such file exist.')
+        return await message.reply('Your File/Video is successfully deleted❗❗❗')
 
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
