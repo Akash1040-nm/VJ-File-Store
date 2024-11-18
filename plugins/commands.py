@@ -249,7 +249,7 @@ async def start(client, message):
                             ]
                         ]
                     )
-                )
+                
             if AUTO_DELETE_MODE == True:
                 k = await client.send_message(chat_id = message.from_user.id, text=f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie File/Video will be deleted in <b><u>{AUTO_DELETE} minutes</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this File/Video to your Saved Messages and Start Download there</b>")
                 await asyncio.sleep(AUTO_DELETE_TIME)
