@@ -191,7 +191,7 @@ async def start(client, message):
                     await x.delete()
                 except:
                     pass
-            await k . edit_text("<b>Your All Files/Videos is successfully deleted!!!</b>")
+            await k.edit_text("<b>Your All Files/Videos is successfully deleted!!!</b>")
         return
 
 # Don't Remove Credit Tg - @VJ_Botz
