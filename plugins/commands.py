@@ -232,7 +232,6 @@ async def start(client, message):
             
             await msg.edit_caption(f_caption)
             
-            
             if AUTO_DELETE_MODE == True:
     try:
         k = await client.send_message(
@@ -256,11 +255,21 @@ async def start(client, message):
         except Exception:
             pass
 
-        g = await client.send_message(chat_id=message.from_user.id, text="<b>Your File/Video is successfully deleted❗❗❗</b>")
-        await g.delete()  # Delete the confirmation message after it is sent
-    except Exception:
-        return await message.reply("No such file exists.")
-        
+        # Notify about successful deletion
+        g = await client.send_message(
+            chat_id=message.from_user.id,
+            text="<b>Your File/Video is successfully deleted❗❗❗</b>"
+        )
+
+        try:
+            await g.delete()  # Delete the notification message
+        except Exception:
+            pass
+
+    except Exception as e:
+        # Handle errors and reply if no file exists
+        await message.reply("No such file exists.")
+            
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
 # Ask Doubt on telegram @KingVJ01
